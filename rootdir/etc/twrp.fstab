@@ -1,0 +1,7 @@
+/system         ext4    /dev/block/platform/sprd-sdhci.3/by-name/system            flags=display="system";backup=1
+/data           ext4    /dev/block/platform/sprd-sdhci.3/by-name/userdata          flags=length=-16384,encryptable=/dev/block/platform/sprd-sdhci.3/by-name/metadata;display="Data";backup=1
+/cache          ext4    /dev/block/platform/sprd-sdhci.3/by-name/cache             flags=display="cache";backup=1
+/boot           emmc    /dev/block/platform/sprd-sdhci.3/by-name/boot              flags=display="Boot";backup=1
+/recovery       emmc    /dev/block/platform/sprd-sdhci.3/by-name/recovery          flags=display="Recovery";backup=1 
+/external_sd    auto    /dev/block/mmcblk1p1            /dev/block/mmcblk1         flags=display="External SDcard";storage;wipeingui;removable;backup=0
+/usbotg         auto    /dev/block/sda1                 /dev/block/sda             flags=display="Usb-Otg";storage;removable;backup=0
