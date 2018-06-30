@@ -34,7 +34,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8
+BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := vishalk17_defconfig
 TARGET_KERNEL_SOURCE := kernel/intex/aqual_life3
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
